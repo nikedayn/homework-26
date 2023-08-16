@@ -1,0 +1,24 @@
+@mixin buttonStyles($color, $width, $height, $padding, $font-size, $font-weight, $font-family, $border-radius, $background-color){
+    color: $color;
+    width: $width;
+    height: $height;
+    padding: $padding;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    font-family: $font-family;
+    border-radius: $border-radius;
+    background-color: $background-color;
+}
+
+.search_input {
+    font-family: 'Arimo';
+    font-size: 20px;
+    width: 100%;
+    height: 50px;
+    border: solid 2px gray;
+    border-radius: 5px;
+}
+
+.search_btn {
+    @include buttonStyles(#C0C0C0, 200px, 50px, 5px, 20px, 700, 'Arimo', 5px, #696969)
+}

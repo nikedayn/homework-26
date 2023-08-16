@@ -1,0 +1,17 @@
+header {
+    padding-top: 20px;
+    .container {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #32CD32;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        box-shadow: 0 10px 10px #008000;
+    }
+
+    .logo_img {
+        height: 90px;
+    }
+}

@@ -1,0 +1,35 @@
+@mixin buttonStyles($color, $width, $height, $padding, $font-size, $font-weight, $font-family, $border-radius, $background-color){
+    color: $color;
+    width: $width;
+    height: $height;
+    padding: $padding;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    font-family: $font-family;
+    border-radius: $border-radius;
+    background-color: $background-color;
+}
+
+.product_list_item {
+    border: solid 2px gray;
+    border-radius: 5px;
+    padding: 10px;
+    width: calc(50% - 5px);
+    .product_img {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .product_name {
+        margin-bottom: 30px;
+    }
+
+    .buy_container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .buy_btn {
+            @include buttonStyles(#C0C0C0, 100px, 50px, 5px, 20px, 700, 'Arimo', 5px, #696969)
+        }
+    }
+}

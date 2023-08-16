@@ -1,0 +1,30 @@
+header {
+    padding-top: 20px;
+    .container {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #32CD32;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        box-shadow: 0 10px 10px #008000;
+    }
+
+    img {
+        height: 90px;
+    }
+
+    input {
+        font-family: 'Arimo';
+        font-size: 20px;
+        width: 100%;
+        height: 50px;
+        border: solid 2px gray;
+        border-radius: 5px;
+    }
+
+    button {
+        @include buttonStyles(#C0C0C0, 200px, 50px, 5px, 20px, 700, 'Arimo', 5px, #696969)
+    }
+}

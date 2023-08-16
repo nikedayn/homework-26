@@ -1,0 +1,85 @@
+/* arimo-regular - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Arimo';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/arimo-v28-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* arimo-700 - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Arimo';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/arimo-v28-cyrillic_latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+// global styles
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: 'Arimo';
+    background-image: url(../img/mountains.jpg);
+    background-size: 15%;
+}
+
+.wraper {
+    overflow-x: hidden;
+    position: relative;
+}
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    display: block;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+@mixin buttonStyles($color, $width, $height, $padding, $font-size, $font-weight, $font-family, $border-radius, $background-color){
+    color: $color;
+    width: $width;
+    height: $height;
+    padding: $padding;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    font-family: $font-family;
+    border-radius: $border-radius;
+    background-color: $background-color;
+}
